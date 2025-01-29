@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clustering/USA Flight Traffic</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style.css') }}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    </head>
+    <body>
+        <header class="bg-light text-center my-1 px-5 d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center" style="height: 50px;">
+                <h3 class="px-1">
+                    <a href="{{url_for('dashboardPage')}}" style="text-decoration: overline; color:#0b5603;">Clustering Visualisation</a>
+                </h3>
+            </div>
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="{{url_for('dashboardPage')}}" class="btn btn-outline-success" style="color:#0b5603;">Dashboard</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container my-4">
+            <div class="content-section">
+                <h3>Topic: Spectral Clustering of USA Flight Data</h3>
+                <div class="row my-4">
+                    <div class="col-md-1">
+                        <i class="fas fa-info-circle description-logo" style="font-size: 2rem; color: #0b5603;"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <h4>Description:</h4>
+                        <p>This project aims to implement unsupervised machine learning methods on a dataset of US domestic flights from 1990 to 2009.</p>
+                        <p>The dataset was sourced from the Kaggle platform, as previously indicated by the university.<a href="https://www.kaggle.com/datasets/flashgordon/usa-airport-dataset/data" style="text-decoration: none; font-style:italic; color:#0b5603;">click here</a>.</p>
+                        <p>The primary algorithms of focus in this context will be spectral clustering. A browser-based user interface/visualizer is constructed to present the conclusions of the data.</p>
+                </div>   
+            </div>
+            <div class="row my-4">
+                <div class="col-md-1">
+                    <i class="fas fa-user-graduate details-logo" style="font-size: 2rem; color: #0b5603;"></i>
+                </div>
+                <div class="col-md-11">
+                    <h4>Details:</h4>
+                    <p><strong>Student:</strong> Yash Anand Raorane</p>
+                    <p><strong>Student ID:</strong> 201741048</p>
+                    <p><strong>Primary Supervisor:</strong> Dr Leszek Gasieniec</p>
+                </div>
+            </div>
+            <button id="readMoreBtn" class="btn btn-outline-success" style="color:white; background-color: #0b5603;">Read More</button>
+            <div id="readMoreContent" style="display: none;">
+                <div class="content-section mt-4">
+                    <h3>1. Aims and Objectives</h3>
+                    <div class="row">
+                        <div class=""col-md-1>
+                            <i class="fas fa-target aims-logo" style="font-size: 2rem; color: #0b5603;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <h4>1.1. Aims</h4>
+                            <p>The major objective of this study is to employ unsupervised machine learning methods, particularly spectral clustering, to examine an extensive dataset of US domestic flights from 1990 to 2009.</p>
+                            <p>The project intends to develop an interactive browser-based user interface that visually conveys the outcomes of the spectral clustering analysis, rendering the insights accessible and understandable to a broad audience.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class="fas fa-list objectives-logo" style="font-size: 2rem; color: #0b5603;"></i>
+                        </div>
+                        <div class="col-md-11">
+                            <h4>1.2. Objectives</h4>
+                            <p>The objectives of this project are as follows:</p>
+                            <ul>
+                                <li>Utilise unsupervised machine learning methodologies to analyse flight data, discover patterns, and discern relationships, which may include socio-economic factors, airport traffic, etc.</li>
+                                <li>Create an interactive web interface to visualise clustering outcomes.</li>
+                                <li>Determine the most effective clustering techniques and evaluation metrics for the specified dataset.</li>
+                            </ul>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+        <script src="{{url_for('static',filename='js/script.js') }}"></script>
+    </body>    
+</html>
